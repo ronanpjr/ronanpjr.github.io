@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #47474a;
+}
+
+header {
+  background-color: #333;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(118, 118, 118, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 3%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  margin-top: 0px;
+  line-height: 0;
+}
+
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: flex;
+  max-width: 35%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 18%;
+}
+
+
+label {
+  position: flex;
+  color: white;
+  font-size: 30px;
+  display: none;
+  animation-duration: 2s;
+}
+
+
+#toggle {
+
+  display: none; 
+  
+}
+
+
+#button {
+  font-size: 28px;
+  background-color: lightgrey;
+  border: 0;
+  padding: 12px;
+  border-radius: 7px; 
+  transition: transform 0.3s ease;
+
+  
+}
+
+#button a  {
+  text-decoration: none;
+  color: black; 
+  font-family: "Cormorant Garamond";
+  font-weight: bolder;
+}
+
+
+#button:hover {
+  background-color: rgb(182, 176, 176);
+}
+
+
+#title {
+  font-size: 300%;
+  font-family: "Cormorant Garamond";
+  color: rgb(243, 243, 243);
+  padding: 0% 15% 0% 15%;
+}
+
+#pa {
+  font-size: 180%;
+  font-family: "Cormorant Garamond";
+  text-align: right;
+  font-weight: bolder;
+  color: rgb(244, 241, 241);
+  margin-top: 1%;
+  margin-bottom: 4%;
+  margin-right: 31%;
+}
+
+
+
+/*footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 60%;
+  position: bottom;
+}
+*/
+
+
+@media screen and (max-width:1080px) {
+
+
+  #title {
+    font-size: 150%;
+  }
+
+  #pa {
+    font-size: 100%;
+    margin-right: 32%;
+    margin-top: 3%;
+  }
+
+  #button {
+    margin-top: 3%;
+    font-size: 120%;
+  }
+
+
+  label { 
+      display: inline-block;
+      cursor: pointer;
+      position: flex;
+      margin-left: 80%;
+
+  }
+
+  nav {
+      text-align: right;
+      width: 90%;
+      display: none;
+  }
+
+  nav ul a {
+      font-size: 18px;
+      text-align: center;
+      display: grid;
+      margin: 0;
+      border-bottom: 1px gray;
+  }
+  #toggle:checked + nav {
+      display: block;
+     
+  }
+
+  footer {
+    margin-top: 35%;
+  }
+  
+  
+}

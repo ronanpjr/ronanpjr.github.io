@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #434345;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('imagens/sm-logo-tracado.png'); /* Add your image URL here */
+    background-size: auto 100%;
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: left center; /* Position image to the left */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .container {
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+  #title {
+    font-size: 300%;
+    color: white;
+    font-family: "Cormorant Garamond";
+  }
+
+  .container p {
+    color: white;
+    font-family: Poppins;
+
+  }
+
+  #contact-details {
+    color: white;
+    font-family: Poppins;
+    list-style-type: none;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 55%;
+  }
+
+
+
+label {
+    position: flex;
+    color: white;
+    font-size: 30px;
+    display: none;
+    animation-duration: 2s;
+  }
+  
+
+
+#toggle {
+
+    display: none; 
+    
+  }
+  
+  
+
+  @media screen and (max-width:1080px) {
+
+    label { 
+        display: inline-block;
+        cursor: pointer;
+        position: flex;
+        margin-left: 80%;
+  
+    }
+  
+    nav {
+        text-align: right;
+        width: 100%;
+        display: none;
+    }
+  
+    nav ul a {
+        font-size: 18px;
+        text-align: center;
+        display: grid;
+        margin: 0;
+        border-bottom: 1px gray;
+        margin-left: 250px;
+    }
+    #toggle:checked + nav {
+        display: block;
+           
+    }
+    
+    #toggle:checked + header {
+        background-position: center center;
+    }
+  
+  }
+
+  

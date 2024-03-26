@@ -1,0 +1,164 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #434345;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url('imagens/sm-logo-tracado.png '); /* Add your image URL here */
+  background-size: auto 100%;
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: left center; /* Position image to the left */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.cheese {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #dcdde7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cheese:hover {
+  transform: translateY(-5px);
+}
+
+.cheese img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cheese h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.cheese p {
+  font-size: 16px;
+  color: #666;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cheese {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.cheese img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cheese h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.cheese p {
+  font-size: 16px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+
+label {
+  position: flex;
+  color: white;
+  font-size: 30px;
+  display: none;
+  animation-duration: 2s;
+}
+
+
+#toggle {
+
+  display: none;
+  
+}
+
+
+
+
+@media screen and (max-width:1080px) {
+
+
+  label { 
+      display: inline-block;
+      cursor: pointer;
+      position: flex;
+      margin-left: 80%;
+
+  }
+
+  nav {
+      text-align: right;
+      width: 100%;
+      display: none;
+  }
+
+  nav ul a {
+      font-size: 18px;
+      text-align: center;
+      display: grid;
+      margin: 0;
+      border-bottom: 1px gray;
+      margin-left: 250px;
+  }
+  #toggle:checked + nav {
+      display: block;
+         
+  }
+  
+  #toggle:checked + header {
+      background-position: center center;
+  }
+
+}
